@@ -1,0 +1,32 @@
+{
+	"tasks": {
+		"build": {
+			"dependsOn": ["^build"],
+			"outputs": ["dist/**"]
+		},
+		"dev": {
+			"cache": false,
+			"persistent": true
+		},
+		"test": {
+			"cache": false,
+			"dependsOn": ["^build"]
+		},
+		"test:e2e": {
+			"cache": false,
+			"dependsOn": ["^build"]
+		},
+		"test:integration": {
+			"cache": false,
+			"dependsOn": ["^build"]
+		},
+		"test:unit": {
+			"cache": false,
+			"dependsOn": ["^build"]
+		},
+		"type:check": {
+			"cache": false,
+			"dependsOn": ["^type:check"]
+		}
+	}
+}

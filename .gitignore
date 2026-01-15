@@ -1,0 +1,39 @@
+# dependencies
+**/node_modules/
+
+# build
+**/.turbo/
+**/.wrangler/
+**/dist/
+**/*.tsbuildinfo
+
+# testing & coverage
+**/coverage/
+**/.test/
+
+# editor
+**/*.suo
+**/*.ntvs*
+**/*.njsproj
+**/*.sln
+**/*.sw?
+**/*.pem
+**/*.idea/
+**/*.todo
+**/.DS_Store
+
+# logs
+**/logs/
+**/*.log
+**/npm-debug.log*
+
+# temp
+.temp
+.local
+.plans
+**/.ignore
+
+# lock files (bun.lock tracked)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml

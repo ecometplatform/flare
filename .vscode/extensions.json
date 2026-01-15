@@ -1,0 +1,13 @@
+{
+  "recommendations": [
+    "formulahendry.auto-rename-tag",
+    "biomejs.biome",
+    "bradlc.vscode-tailwindcss",
+    "streetsidesoftware.code-spell-checker",
+    "EditorConfig.EditorConfig",
+    "ms-vsliveshare.vsliveshare",
+    "cardinal90.multi-cursor-case-preserve",
+    "waderyan.gitblame",
+    "github.vscode-github-actions"
+  ]
+}

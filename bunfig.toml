@@ -1,0 +1,11 @@
+# Bun configuration for flare monorepo
+
+[install]
+linker = "hoisted"
+auto = "auto"
+exact = true
+frozenLockfile = false
+production = false
+
+[install.scopes]
+"@flare" = { }
