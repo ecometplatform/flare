@@ -26,6 +26,7 @@
 		"app:cloudflare-worker:test": "turbo run @flare/cloudflare-worker#test",
 		"check": "biome check",
 		"check:fix": "biome check --fix",
+		"gen:vscode-tasks": "bun run scripts/generate-vscode-tasks.ts",
 		"pkg:cloudflare:build": "turbo run @flare/cloudflare#build",
 		"pkg:cloudflare:test": "turbo run @flare/cloudflare#test",
 		"pkg:flare:build": "turbo run @flare/core#build",
