@@ -64,6 +64,14 @@
 			"semicolons": "asNeeded"
 		}
 	},
+	"json": {
+		"assist": {
+			"enabled": true
+		},
+		"formatter": {
+			"enabled": true
+		}
+	},
 	"linter": {
 		"enabled": true,
 		"rules": {
@@ -166,5 +174,17 @@
 			}
 		}
 	},
+	"overrides": [
+		{
+			"assist": {
+				"actions": {
+					"source": {
+						"useSortedKeys": "off"
+					}
+				}
+			},
+			"includes": ["src/**/package.json"]
+		}
+	],
 	"root": true
 }
