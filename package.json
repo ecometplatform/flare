@@ -36,6 +36,7 @@
 		"gen:vscode-tasks": "bun run scripts/generate-vscode-tasks.ts",
 		"pkg:cloudflare:build": "turbo run @ecomet/flare-cloudflare#build",
 		"pkg:cloudflare:test": "turbo run @ecomet/flare-cloudflare#test",
+		"pkg:flare-testing:build": "turbo run @ecomet/flare-testing#build",
 		"pkg:flare:build": "turbo run @ecomet/flare#build",
 		"pkg:flare:test": "turbo run @ecomet/flare#test",
 		"test": "turbo run test",

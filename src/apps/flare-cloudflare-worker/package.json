@@ -1,0 +1,27 @@
+{
+	"dependencies": {
+		"@ecomet/flare": "workspace:*",
+		"solid-js": "catalog:",
+		"tailwindcss": "catalog:"
+	},
+	"devDependencies": {
+		"@cloudflare/vite-plugin": "catalog:",
+		"@playwright/test": "catalog:",
+		"typescript": "catalog:",
+		"vite": "catalog:",
+		"vite-plugin-solid": "catalog:"
+	},
+	"name": "@ecomet/flare-cloudflare-worker",
+	"private": true,
+	"scripts": {
+		"build": "vite build",
+		"cf:types": "wrangler types --env local",
+		"clean": "rm -rf node_modules/.vite .wrangler dist",
+		"dev": "rm -rf node_modules/.vite .wrangler && vite dev --port 5190",
+		"e2e": "rm -rf node_modules/.vite .wrangler && CI=1 playwright test --config e2e/playwright.config.ts",
+		"e2e:ui": "playwright test --config e2e/playwright.config.ts --ui",
+		"loc": "rm -rf node_modules/.vite .wrangler && CLOUDFLARE_ENV=local vite dev --port 5190",
+		"preview": "wrangler dev --config wrangler.jsonc --port 4190"
+	},
+	"type": "module"
+}

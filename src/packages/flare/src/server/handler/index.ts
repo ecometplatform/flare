@@ -188,6 +188,17 @@ export type { PrefetchStrategy } from "../../router/_internal/types"
 export type { ExecutionContext } from "../_internal/types"
 export type { FlareMiddleware, MiddlewareContext, MiddlewareResult } from "../middleware"
 export type { CspDirectives } from "../security"
+export type { NavFormat } from "./constants"
+export type {
+	ContextState,
+	DevError,
+	FlareState,
+	MatchState,
+	PerRouteHead,
+	QueryState,
+	RouteState,
+} from "./flare-state"
+export type { LoaderContext, MatchedComponent, PreloaderContext } from "./shared-types"
 export type {
 	AuthenticateFnContext,
 	DataProtection,

@@ -22,6 +22,8 @@ const shared: Partial<Options> = {
 		"@ecomet/flare/client/flare-context",
 		"@ecomet/flare/router/outlet-context",
 		"@ecomet/flare/router/outlet",
+		/* Testing - optional peer dep */
+		"@playwright/test",
 	],
 	format: ["esm"],
 	sourcemap: true,
@@ -140,6 +142,9 @@ const ssrEntries = {
 	"styles/registry": "src/styles/registry.ts",
 	"styles/reset-css": "src/styles/reset-css.tsx",
 	"styles/view-transition-css": "src/styles/view-transition-css.tsx",
+
+	/* Testing utilities - Playwright e2e helpers */
+	"testing/playwright/index": "src/testing/playwright/index.ts",
 	"theme-script": "src/scripts/theme.tsx",
 	"view-transition-css": "src/styles/view-transition-css.tsx",
 }

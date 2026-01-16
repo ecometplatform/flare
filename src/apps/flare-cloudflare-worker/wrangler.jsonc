@@ -1,0 +1,20 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+
+	"assets": {
+		"binding": "ASSETS",
+		"directory": "./public"
+	},
+	"compatibility_date": "2025-01-01",
+	"compatibility_flags": ["nodejs_compat"],
+
+	"env": {
+		"local": {
+			"vars": {
+				"CLOUDFLARE_ENV": "local"
+			}
+		}
+	},
+	"main": "./src/server.ts",
+	"name": "flare-cloudflare-worker"
+}
