@@ -1,4 +1,7 @@
 {
+	"dependencies": {
+		"jsdom": "27.4.0"
+	},
 	"devDependencies": {
 		"@biomejs/biome": "^2.3.8",
 		"@cloudflare/vitest-pool-workers": "0.10.14",
@@ -33,6 +36,10 @@
 		"app:cloudflare-worker:test": "turbo run @ecomet/flare-cloudflare-worker#test",
 		"check": "biome check",
 		"check:fix": "biome check --fix",
+		"claude": "claude --dangerously-skip-permissions",
+		"claude:clear": "bun run scripts/claude-clear.ts",
+		"claude:continue": "claude --dangerously-skip-permissions -c",
+		"claude:resume": "claude --dangerously-skip-permissions -r",
 		"gen:vscode-tasks": "bun run scripts/generate-vscode-tasks.ts",
 		"pkg:cloudflare:build": "turbo run @ecomet/flare-cloudflare#build",
 		"pkg:cloudflare:test": "turbo run @ecomet/flare-cloudflare#test",
